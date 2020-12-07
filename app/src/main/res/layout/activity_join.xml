@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    tools:context=".activity.JoinActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3"/>
+
+    <ImageView
+        android:layout_width="202.5dp"
+        android:layout_height="57.5dp"
+        android:src="@drawable/logo4"
+        android:layout_gravity="center"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:id="@+id/layout_phone"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:weightSum="1"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp">
+
+            <com.hbb20.CountryCodePicker
+                app:ccp_hintExampleNumber="true"
+                android:id="@+id/country_code_picker"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </com.hbb20.CountryCodePicker>
+
+            <EditText
+                android:id="@+id/edit_phonenum"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/size_edit"
+                android:fontFamily="@font/spoqa_regular"
+                android:textColorHint="@color/colorGray6"
+                android:textCursorDrawable="@drawable/cursor_color"
+                android:gravity="center_vertical"
+                android:hint="@string/enter_phone"
+                android:inputType="number"
+                android:layout_gravity="center_vertical"
+                android:background="@null"
+                android:maxLines="1">
+            </EditText>
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:id="@+id/line_phoneedit"
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@color/colorGray6"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp">
+        <TextView
+            android:id="@+id/text_errormsg"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/invalid_phonenum"
+            android:textSize="@dimen/size_error_text"
+            android:fontFamily="@font/spoqa_regular"
+            android:textColor="@color/colorRed"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/text_next"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/roundspace_btn_gray"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:text="@string/certified"
+        android:layout_marginTop="10dp"
+        android:textSize="@dimen/size_btn"
+        android:fontFamily="@font/spoqa_regular"
+        android:textColor="@color/colorWhite"
+        android:gravity="center"/>
+</androidx.appcompat.widget.LinearLayoutCompat>

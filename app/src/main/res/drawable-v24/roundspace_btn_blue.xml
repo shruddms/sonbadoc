@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/colorRipple">
+    <item android:id="@android:id/background">
+        <shape
+            android:shape="rectangle" android:padding="10dp">
+            <!--배경색-->
+            <solid android:color="@color/colorBlue3"/>
+            <!--모서리 둥근정도 설정-->
+            <corners android:bottomRightRadius="30dp"
+                android:bottomLeftRadius="30dp"
+                android:topLeftRadius="30dp"
+                android:topRightRadius="30dp"/>
+        </shape>
+    </item>
+</ripple>
+
+

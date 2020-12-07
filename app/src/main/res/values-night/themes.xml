@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Sonbadoc" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!-- 타이틀바 없애기-->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <!--Status Bar색상 변경-->
+        <item name="android:statusBarColor">@color/colorWhite</item>
+        <!--Status Bar 글자색깔 (true는 검정)-->
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+</resources>

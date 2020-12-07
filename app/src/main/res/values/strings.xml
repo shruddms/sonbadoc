@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">sonbadoc</string>
+
+    <dimen name="size_edit">15sp</dimen>
+    <dimen name="size_text">15sp</dimen>
+    <dimen name="size_text_small">13.5sp</dimen>
+    <dimen name="size_text_small_2">11.5sp</dimen>
+    <dimen name="size_title">16.5sp</dimen>
+    <dimen name="size_btn">15dp</dimen>
+    <dimen name="size_btn_small">13dp</dimen>
+    <dimen name="size_error_text">12dp</dimen>
+
+    <!--    LoginActivity-->
+    <string name="phonenum_login">휴대폰 번호로 시작하기</string>
+    <string name="naver_login">네이버로 시작하기</string>
+    <string name="kakao_login">카카오로 시작하기</string>
+    <string name="google_login">구글플러스로 시작하기</string>
+    <string name="facebook_login">페이스북으로 시작하기</string>
+    <string name="rights">ⓒ2021 sonbadoc. all rights reserved</string>
+    <string name="login_error">로그인을 실패했어요.</string>
+
+    <!--    JoinActivity-->
+    <string name="enter_phone">휴대폰번호를 입력해주세요.</string>
+    <string name="certified">인증하기</string>
+    <string name="next">다음</string>
+    <string name="invalid_phonenum">잘못된 형식의 휴대폰 번호입니다.</string>
+
+    <!--    JoinSMScodeActivity-->
+    <string name="enter_code">전송된 코드 입력</string>
+    <string name="not_receive_code">코드를 받지 못하셨나요?</string>
+    <string name="retransmission_code">코드 재전송</string>
+    <string name="not_match_code">확인 코드가 올바르지 않습니다.</string>
+    <string name="time_remaining">남은시간</string>
+    <string name="termination_time">코드 재전송을 클릭하세요.</string>
+
+    <!--    Dialog-->
+    <string name="message_loading">문자 발송 중입니다.</string>
+
+    <!--    Toast-->
+</resources>

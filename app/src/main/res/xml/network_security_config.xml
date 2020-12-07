@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--안드로이드 9.0 파이(Pie) 이상은 http 접속 불가이기 때문에
+서버주소를 http여도 실행되도록 허용해주도록 설정-->
+
+<network-security-config>
+    <base-config cleartextTrafficPermitted="true" />
+</network-security-config>
+
